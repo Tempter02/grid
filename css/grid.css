@@ -1,0 +1,78 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+}
+[class^="box-"] {
+background:  rgb(238, 240, 138);
+display: grid;
+text-align: center;
+padding-top: 5px;
+}
+.container {
+display: grid;
+gap: 10px;
+height: 100vh;
+margin: 10px;
+
+/* БЛОКИ */
+grid-template-areas:
+"Sale1 Sale1 Product1 Product2"
+"Sale1 Sale1 Product1 Product2"
+"Sale2 Sale2 Product1 Product2"
+"Sale2 Sale2 Product1 Product2"
+"Product3 Product4 Sale3 Sale3"
+"Product3 Product4 Sale3 Sale3"
+"Product3 Product4 Sale4 Sale4"
+"Product3 Product4 Sale4 Sale4"
+"Product5 Product6 Product7 Product8"
+"Product5 Product6 Product7 Product8"
+"Product5 Product6 Product7 Product8"
+"Product5 Product6 Product7 Product8";
+}
+
+.box-1 {
+    
+grid-area: Sale1;
+}
+.box-2 {
+grid-area: Product1;
+}
+.box-3 {
+grid-area: Product2;
+}
+
+.box-4 {
+grid-area: Sale2;
+}
+.box-5 {
+grid-area: Product3;
+}
+.box-6 {
+grid-area: Product4;
+}
+
+.box-7 {
+grid-area: Sale3;
+}
+.box-8 {
+grid-area: Sale4;
+}
+.box-9 {
+grid-area: Product5;
+}
+
+.box-10 {
+grid-area: Product6;
+}
+.box-11{
+grid-area: Product7;
+}
+.box-12 {
+grid-area: Product8;
+}
